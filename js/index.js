@@ -30,14 +30,14 @@ $(document).ready(function() {
 	});
   	$('.menu__icon').removeClass('active');
   })
-	 
+
 });
 
 $(document).ready(function(){
 	 function scrollNav() {
-	  $('nav a').click(function(){  
+	  $('nav a').click(function(){
 	    //Toggle Class
-	    $(".active-link").removeClass("active-link");      
+	    $(".active-link").removeClass("active-link");
 	    $(this).closest('li').addClass("active-link");
 	    var theClass = $(this).attr("class");
 	    $('.'+theClass).parent('li').addClass('active-link');
